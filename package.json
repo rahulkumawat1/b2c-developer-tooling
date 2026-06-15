@@ -27,16 +27,16 @@
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.34.3",
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.31.0",
     "eslint-plugin-prettier": "catalog:",
     "prettier": "catalog:"
   },
   "pnpm": {
     "overrides": {
-      "@smithy/types": "4.14.3"
+      "@smithy/types": "4.15.0"
     },
     "patchedDependencies": {
       "yargs@17.7.2": "patches/yargs@17.7.2.patch"
