@@ -1,5 +1,18 @@
 # @salesforce/b2c-dx-mcp
 
+## 1.3.0
+
+### Minor Changes
+
+- [#498](https://github.com/SalesforceCommerceCloud/b2c-developer-tooling/pull/498) [`c58924d`](https://github.com/SalesforceCommerceCloud/b2c-developer-tooling/commit/c58924d643dc80251ff0cf35dbf8a647fb16d662) - Deprecate the Storefront Next MCP tools (`sfnext_*`) in favor of the `storefront-next` and `storefront-next-figma` agent-skills plugins. These tools are not compatible with the Storefront Next 1.0 GA release and will be removed in a future release. (Thanks [@clavery](https://github.com/clavery)!)
+
+  The six `sfnext_*` tools have moved to a new `STOREFRONTNEXT_DEPRECATED` toolset that is never auto-enabled by project detection and is excluded from `--toolsets all`. To keep using them, request the toolset explicitly: `--toolsets STOREFRONTNEXT_DEPRECATED --allow-non-ga-tools`. Storefront Next projects still auto-enable the `STOREFRONTNEXT` toolset (MRT bundle push, SCAPI discovery/scaffolding, and diagnostics). Migrate to the agent-skills plugins — see the Agent Skills guide for installation.
+
+### Patch Changes
+
+- Updated dependencies [[`f630103`](https://github.com/SalesforceCommerceCloud/b2c-developer-tooling/commit/f630103e4c55fbdf68896db2f870851efe390ac1), [`f630103`](https://github.com/SalesforceCommerceCloud/b2c-developer-tooling/commit/f630103e4c55fbdf68896db2f870851efe390ac1)]:
+  - @salesforce/b2c-tooling-sdk@1.14.0
+
 ## 1.2.1
 
 ### Patch Changes
