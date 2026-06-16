@@ -161,7 +161,7 @@ const referenceSidebar = [
         ],
       },
       {
-        text: 'Storefront Next',
+        text: 'Storefront Next (deprecated)',
         collapsed: true,
         items: [
           {text: 'sfnext_get_guidelines', link: '/mcp/tools/sfnext-get-guidelines'},
